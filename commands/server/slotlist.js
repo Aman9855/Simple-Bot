@@ -16,7 +16,7 @@ module.exports = {
             .setAuthor(message.guild, message.guild.iconURL())
             .setTitle("Slot List")
             .setDescription(`${say}`)
-            .setField("Id-Pass will be at 3:45 PM & 4:45 to the Leader in Specific Channel")
+            //.setField("Id-Pass will be at 3:45 PM & 4:45 to the Leader in Specific Channel")
             .setColor("RANDOM")
             .setThumbnail("https://cdn.discordapp.com/attachments/675632627998523402/722844897576747048/ezgif.com-video-to-gif_7.gif")
             //.setFooter(`${message.author.username}`, `${message.author.avatarURL()}`)
