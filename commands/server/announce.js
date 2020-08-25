@@ -18,7 +18,6 @@ module.exports = {
             .setColor("RANDOM")
             .setThumbnail("https://cdn.discordapp.com/attachments/675632627998523402/722844897576747048/ezgif.com-video-to-gif_7.gif")
             //.setFooter(`${message.author.username}`, `${message.author.avatarURL()}`)
-            .setTimestamp()
             
             message.channel.send(embed)
             
