@@ -15,10 +15,11 @@ module.exports = {
         let embed = new MessageEmbed()
             .setAuthor(message.guild, message.guild.iconURL())
             .setTitle("Slot List")
-            .setDescription(`${say}`)
+            .setDescription(`${say} 
+            Id-Pass will be at  3:45 PM & 4:45  to the Leader in Specific Channel ( <#697401222478692352> )
+
+@here <@&705783124503822337>`)
             .setColor("RANDOM")
-            .setDescription1("Id-Pass will be at  3:45 PM & 4:45  to the Leader in Specific Channel ( <#697401222478692352> ) @here <@&705783124503822337>")
-            //.setFooter("Id-Pass will be at  3:45 PM & 4:45  to the Leader in Specific Channel ( <#697401222478692352> ) @here <@&705783124503822337>")
             .setThumbnail("https://cdn.discordapp.com/attachments/675632627998523402/722844897576747048/ezgif.com-video-to-gif_7.gif")
             
             message.channel.send(embed)
