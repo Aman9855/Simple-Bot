@@ -14,7 +14,6 @@ module.exports = {
         if(!say) return message.channel.send(`❌ | `+"I Cannot Repeat Blank Message")
         let embed = new MessageEmbed()
             .setAuthor(message.guild, message.guild.iconURL())
-            .setTitle("Slot List")
             .setDescription(`${say}`)
             .setColor("RANDOM")
             .setThumbnail("https://cdn.discordapp.com/attachments/675632627998523402/722844897576747048/ezgif.com-video-to-gif_7.gif")

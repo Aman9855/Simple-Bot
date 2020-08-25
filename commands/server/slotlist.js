@@ -14,6 +14,7 @@ module.exports = {
         if(!say) return message.channel.send(`❌ | `+"I Cannot Repeat Blank Message")
         let embed = new MessageEmbed()
             .setAuthor(message.guild, message.guild.iconURL())
+            .setTitle("Slot List")
             .setDescription(`${say}`)
             .setField("Id-Pass will be at 3:45 PM & 4:45 to the Leader in Specific Channel")
             .setColor("RANDOM")
