@@ -16,12 +16,12 @@ client.aliases = new discord.Collection();
 });
 
 let statuses = [
-    "Working with One8 Esports",
+    "Working with FEDERAL ESPORTS",
     "Made By: AmanOP"
 ]
 
 client.once('ready', () => {
-  console.log('One8 Esport is Online!');
+  console.log('FEDERAL ESPORTS is Online!');
 
   setInterval(function(){
       let status = statuses[Math.floor(Math.random() * statuses.length)];
