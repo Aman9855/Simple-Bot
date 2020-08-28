@@ -8,7 +8,7 @@ module.exports = {
     usage: "image <utl> <tessage/title>",
     description: "Returns provided text in Embed form.",
     run: async(client, message, args) => {
-        if(!message.member.hasPermission("MANAGE_MESSAGE")) return message.channel.send(`YOU DO NOT HAVE PERMISSION `)
+        //if(!message.member.hasPermission("MANAGE_MESSAGE")) return message.channel.send(`YOU DO NOT HAVE PERMISSION `)
         await message.delete()
         let say = args[0]
         let say1 = args.slice(1).join(" ");
