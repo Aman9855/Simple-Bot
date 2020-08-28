@@ -16,7 +16,7 @@ module.exports = {
             .setAuthor(message.guild, message.guild.iconURL())
             .setTitle("Slot List")
             .setDescription(`${say} 
-            Id-Pass will be at  3:45 PM & 4:45  to the Leader in Specific Channel ( <#697401222478692352> )
+Id-Pass will be at  3:45 PM & 4:45  to the Leader in Specific Channel ( <#697401222478692352> )
 
 @here <@&705783124503822337>`)
             .setColor("RANDOM")
