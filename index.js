@@ -7,7 +7,6 @@ const client = new discord.Client({
   disableEveryone: false
 });
 
-require("./uptime.js");
 client.commands = new discord.Collection();
 client.aliases = new discord.Collection();
 
@@ -16,12 +15,11 @@ client.aliases = new discord.Collection();
 });
 
 let statuses = [
-    "Working with FEDERAL ESPORTS",
-    "Made By: AmanOP"
+    "Made By: Aman Bhai"
 ]
 
 client.once('ready', () => {
-  console.log('FEDERAL ESPORTS is Online!');
+  console.log('Bot is Online!');
 
   setInterval(function(){
       let status = statuses[Math.floor(Math.random() * statuses.length)];
@@ -29,32 +27,4 @@ client.once('ready', () => {
   }, 5000)
 });
 
-client.on("message", async message => {
-  const prefixMention = new RegExp(`^<@!?${client.user.id}>( |)$`);
-  if (message.content.match(prefixMention)) {
-    return message.reply(`My prefix is \`${prefix}\``);
-  }
-
-  if (message.author.bot) return;
-  if (!message.guild) return;
-  if (!message.content.startsWith(prefix)) return;
-
-  if (!message.member)
-    message.member = await message.guild.fetchMember(message);
-
-  const args = message.content
-    .slice(prefix.length)
-    .trim()
-    .split(/ +/g);
-  const cmd = args.shift().toLowerCase();
-
-  if (cmd.length === 0) return;
-
-  let command = client.commands.get(cmd);
-
-  if (!command) command = client.commands.get(client.aliases.get(cmd));
-
-  if (command) command.run(client, message, args);
-});
-
-client.login(process.env.token);
+client.login(config.token);
